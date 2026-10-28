@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tecnicentro Warner · Taller mecánico en Guerrero Negro</title>
+<meta name="description" content="Taller mecánico en Guerrero Negro: frenos, suspensión y alineación. Lunes a sábado de 8:00 a 19:00. Llama al 615 157 2179.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --grafito:#1B1D20; --acero:#2A2D32; --amarillo:#F2B705; --humo:#EEF0F2; --papel:#FFFFFF; --tinta:#1B1D20; --gris:#5B6068;
+  --display:"Barlow Condensed","Arial Narrow","Impact",sans-serif;
+  --texto:"Barlow","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--texto);color:var(--tinta);background:var(--papel);line-height:1.55;font-size:1.0625rem;
+  padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amarillo);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+
+.top{background:var(--grafito);color:#fff;padding:calc(.9rem + env(safe-area-inset-top,0px)) 0 .9rem}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.marca{font-family:var(--display);font-weight:800;font-size:1.35rem;letter-spacing:.06em;text-transform:uppercase}
+.marca b{color:var(--amarillo);font-weight:800}
+#lang{font:700 .95rem var(--texto);background:transparent;color:#fff;border:2px solid var(--amarillo);border-radius:999px;padding:.45rem 1.1rem;cursor:pointer}
+#lang:hover{background:var(--amarillo);color:var(--grafito)}
+
+.hero{background:var(--grafito);color:#fff;padding:2.5rem 0 3.5rem;border-bottom:8px solid var(--amarillo)}
+.hero h1{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(2.8rem,12vw,5.5rem);line-height:.95;margin:0 0 1rem;letter-spacing:.01em}
+.hero h1 span{color:var(--amarillo)}
+.hero p{margin:0 0 1.75rem;max-width:32rem;font-size:1.2rem;color:#D6D9DD}
+.botones{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.85rem 1.5rem;border-radius:.4rem;font-weight:700;text-decoration:none;border:2px solid var(--amarillo)}
+.btn.llamar{background:var(--amarillo);color:var(--grafito)}
+.btn.mapa{color:#fff}
+.btn:hover{filter:brightness(1.1)}
+
+section{padding:3rem 0}
+h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(1.8rem,6vw,2.5rem);line-height:1;margin:0 0 1.5rem;letter-spacing:.02em}
+h2::after{content:"";display:block;width:3.5rem;height:6px;background:var(--amarillo);margin-top:.6rem}
+
+.servicios{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.servicios li{border:2px solid var(--grafito);padding:1.25rem;border-radius:.4rem}
+.servicios .n{font-family:var(--display);font-weight:800;font-size:2.2rem;color:var(--amarillo);-webkit-text-stroke:1px var(--grafito);line-height:1}
+.servicios h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.5rem;margin:.25rem 0 .25rem}
+.servicios p{margin:0;color:var(--gris)}
+
+.info{background:var(--humo)}
+.datos{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.dato h3{margin:0 0 .2rem;font:700 .9rem var(--texto);text-transform:uppercase;letter-spacing:.08em;color:var(--gris)}
+.dato p{margin:0}
+.grande{font-size:1.3rem;font-weight:700}
+
+.resena{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.nota{font-family:var(--display);font-weight:800;font-size:3.5rem;line-height:1}
+
+footer{background:var(--grafito);color:#C9CDD2;text-align:center;padding:1.75rem 0;font-size:.95rem}
+footer a{color:var(--amarillo)}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <div class="marca">Tecnicentro <b>Warner</b></div>
+    <button id="lang" type="button">English</button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Tecnicentro <span>Warner</span></h1>
+    <p data-i="tagline">Taller mecánico en Guerrero Negro. Frenos, suspensión y alineación.</p>
+    <div class="botones">
+      <a class="btn llamar" href="tel:+526151572179" data-i="call">Llamar al 615 157 2179</a>
+      <a class="btn mapa" href="https://www.google.com/maps/search/?api=1&query=Tecnicentro+Warner+Guerrero+Negro" target="_blank" rel="noopener" data-i="map">Cómo llegar</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="servicios">
+    <div class="wrap">
+      <h2 data-i="h_serv">Servicios</h2>
+      <ul class="servicios">
+        <li><div class="n">01</div><h3 data-i="s1">Frenos</h3><p data-i="s1d">Revisión y reparación de frenos.</p></li>
+        <li><div class="n">02</div><h3 data-i="s2">Suspensión</h3><p data-i="s2d">Reparación de suspensión.</p></li>
+        <li><div class="n">03</div><h3 data-i="s3">Alineación</h3><p data-i="s3d">Alineación de tu vehículo.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="info" id="visitanos">
+    <div class="wrap">
+      <h2 data-i="h_vis">Visítanos</h2>
+      <div class="datos">
+        <div class="dato">
+          <h3 data-i="l_hor">Horario</h3>
+          <p class="grande" data-i="d1">Lunes a sábado</p>
+          <p data-i="d2">8:00 a. m. a 7:00 p. m.</p>
+          <p data-i="d3">Domingo: cerrado</p>
+        </div>
+        <div class="dato">
+          <h3 data-i="l_tel">Teléfono</h3>
+          <p class="grande"><a href="tel:+526151572179">615 157 2179</a></p>
+        </div>
+        <div class="dato">
+          <h3 data-i="l_dir">Dirección</h3>
+          <p data-i="addr">Carretera a Guerrero Negro 13, col. Loma Bonita<br>23940 Guerrero Negro, B.C.S.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="opiniones">
+    <div class="wrap">
+      <h2 data-i="h_op">Opiniones</h2>
+      <div class="resena">
+        <div class="nota">4.3</div>
+        <p data-i="rate">Calificación en Google Maps (14 opiniones).</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Tecnicentro Warner · Guerrero Negro, B.C.S. ·
+    <a href="https://www.facebook.com/rene.warner.5496" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</footer>
+
+<script>
+var T={
+ es:{title:"Tecnicentro Warner · Taller mecánico en Guerrero Negro",
+  desc:"Taller mecánico en Guerrero Negro: frenos, suspensión y alineación. Lunes a sábado de 8:00 a 19:00. Llama al 615 157 2179.",
+  btn:"English",
+  tagline:"Taller mecánico en Guerrero Negro. Frenos, suspensión y alineación.",
+  call:"Llamar al 615 157 2179", map:"Cómo llegar",
+  h_serv:"Servicios", s1:"Frenos", s1d:"Revisión y reparación de frenos.", s2:"Suspensión", s2d:"Reparación de suspensión.", s3:"Alineación", s3d:"Alineación de tu vehículo.",
+  h_vis:"Visítanos", l_hor:"Horario", d1:"Lunes a sábado", d2:"8:00 a. m. a 7:00 p. m.", d3:"Domingo: cerrado",
+  l_tel:"Teléfono", l_dir:"Dirección", addr:"Carretera a Guerrero Negro 13, col. Loma Bonita<br>23940 Guerrero Negro, B.C.S.",
+  h_op:"Opiniones", rate:"Calificación en Google Maps (14 opiniones)."},
+ en:{title:"Tecnicentro Warner · Auto repair shop in Guerrero Negro",
+  desc:"Auto repair shop in Guerrero Negro, Mexico: brakes, suspension and alignment. Monday to Saturday, 8:00 a.m. to 7:00 p.m. Call 615 157 2179.",
+  btn:"Español",
+  tagline:"Auto repair shop in Guerrero Negro. Brakes, suspension and alignment.",
+  call:"Call 615 157 2179", map:"Get directions",
+  h_serv:"Services", s1:"Brakes", s1d:"Brake inspection and repair.", s2:"Suspension", s2d:"Suspension repair.", s3:"Alignment", s3d:"Wheel alignment for your vehicle.",
+  h_vis:"Visit us", l_hor:"Hours", d1:"Monday to Saturday", d2:"8:00 a.m. to 7:00 p.m.", d3:"Sunday: closed",
+  l_tel:"Phone", l_dir:"Address", addr:"Carretera a Guerrero Negro 13, Loma Bonita<br>23940 Guerrero Negro, B.C.S., Mexico",
+  h_op:"Reviews", rate:"Rating on Google Maps (14 reviews)."}
+};
+function setLang(l){
+  var d=T[l];
+  document.documentElement.lang=l;
+  document.title=d.title;
+  document.querySelector('meta[name=description]').setAttribute('content',d.desc);
+  document.getElementById('lang').textContent=d.btn;
+  document.querySelectorAll('[data-i]').forEach(function(el){el.innerHTML=d[el.getAttribute('data-i')];});
+  try{localStorage.setItem('lang',l);}catch(e){}
+}
+var cur="es";
+try{cur=localStorage.getItem('lang')||"";}catch(e){}
+if(cur!=="es"&&cur!=="en"){cur=(navigator.language||"").toLowerCase().indexOf("en")===0?"en":"es";}
+setLang(cur);
+document.getElementById('lang').addEventListener('click',function(){cur=cur==="es"?"en":"es";setLang(cur);});
+</script>
+</body>
+</html>
